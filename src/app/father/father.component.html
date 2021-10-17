@@ -1,0 +1,15 @@
+<div class="container">
+    
+    <h1 class="page__title">BIENVENIDO A LA CARTA DE LOS REYES MAGOS. ¡EMPECEMOS!</h1>
+    <img class="bckImg" src="http://3.bp.blogspot.com/-GOhxb0TBLO0/UN8-esK-WbI/AAAAAAAAA4Q/Vk8t2MQd6nI/s1600/wallpaper-1653014+copia.jpg" alt="bckImg">
+    <h2>Sabemos que te has portado muy bien este año! Por eso, piensa en todo lo que te gustaría pedirle a los Reyes Magos y escríbelo en la carta. Lo leerán personalmente, así que diles cosas bonitas y seguro que te traen más regalos!</h2>
+    <textarea #fatherInputLink (keyup)='keyUpEvent(fatherInputLink.value)'></textarea>
+    
+    <h3>Tú solo te encargas de escribir lo que deseas y nosotros hacemos que tu carta se vea increíble!</h3>
+    <app-first-son [ngClass]="{'dark': !backgroundColor, 'light': backgroundColor}" [inputFirstSon]='inputFirstSon'></app-first-son>
+    <button (click)="changeBckColor()">Cambiar estilo de carta</button>
+    <app-second-son (messageEvent)='receiveMessage($event)'></app-second-son>
+    <p>{{sonMessage}}</p>
+    <app-third-son [giftsGallery]='giftsGallery'></app-third-son>
+</div>
+

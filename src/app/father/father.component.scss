@@ -1,0 +1,85 @@
+$bodyBckcolor: #6d81e2;
+$bodyColor: whiteSmoke;
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+.dark{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 8px;
+    background-image: url('https://img2.rtve.es/p/52110?imgProgApi=imgPortada&w=1600');
+    background-size: cover;
+    color: #ced5f7;
+}
+.light{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 8px;
+    background-image: url('https://st4.depositphotos.com/15583058/21945/i/600/depositphotos_219453722-stock-photo-flat-lay-with-festive-arrangement.jpg');
+    background-size: cover;
+    color: #d71818;
+    font-weight: 700;
+}
+
+.container{
+    font-family: 'Goudy Bookletter 1911', serif;
+    margin: 0 auto;
+    background-color: $bodyBckcolor;
+    .bckImg{
+        display: block;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+    .page__title{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        color: $bodyColor;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 3rem;
+    }
+    textarea{
+        display: block;
+        width: 90%;
+        margin: 30px auto;
+        min-height: 200px;
+        font-size: 1.25rem;
+        font-family: 'Goudy Bookletter 1911', serif;
+        background-color: #c3c1f2;
+        color: #010329;
+        border-radius: 8px;
+    }
+    h2, h3, p{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        color: $bodyColor;
+        font-size: 1.75rem;
+        font-weight: 400;
+        line-height: 1.75rem;
+        width: 90%;
+    }
+    h3{
+        padding-top: 0;
+    }
+    button{
+        display: block;
+        width: 80%;
+        max-width: 350px;
+        margin: 20px auto 20px auto;
+        padding: 15px;
+        border: 2px solid $bodyColor;
+        border-radius: 8px;
+        cursor: pointer;
+        color: $bodyColor;
+        font-size: 1rem;
+        background-color: #152573;
+        font-family: 'Goudy Bookletter 1911', serif;
+    }
+}

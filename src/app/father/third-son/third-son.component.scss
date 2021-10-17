@@ -1,0 +1,36 @@
+$bodyBckcolor: #6d81e2;
+
+*{
+    margin: 0;
+}
+.gifts{
+    width: 100%;
+    background-color: $bodyBckcolor;
+    .gifts__title{
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    .gifts__ul{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 0;
+    }
+    .gifts__ul__li{
+        list-style-type: none;
+        margin: 0 5px;
+        .giftsImgs{
+            cursor: pointer;
+            border-radius: 6px;
+            width: 100%;
+            max-height: 183px;
+            max-width: 300px;
+        }
+    }
+}

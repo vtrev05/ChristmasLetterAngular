@@ -1,0 +1,26 @@
+<div class="gifts babys">
+    <h1 class="gifts__title">{{giftsGallery.babys.title}}</h1>
+    <ul class="gifts__ul">
+        <li class="gifts__ul__li" *ngFor="let element of giftsGallery.babys.imgs">
+            <img class="giftsImgs" src="{{element.src}}" alt="{{element.alt}}">
+        </li>
+    </ul>
+</div>
+
+<div class="gifts child">
+    <h1 class="gifts__title">{{giftsGallery.child.title}}</h1>
+    <ul class="gifts__ul">
+        <li class="gifts__ul__li" *ngFor="let element of giftsGallery.child.imgs">
+            <img class="giftsImgs" src="{{element.src}}" alt="{{element.alt}}">
+        </li>
+    </ul>
+</div>
+
+<div class="gifts teens">
+    <h1 class="gifts__title">{{giftsGallery.teens.title}}</h1>
+    <ul class="gifts__ul">
+        <li class="gifts__ul__li" *ngFor="let element of giftsGallery.teens.imgs">
+            <img class="giftsImgs" src="{{element.src}}" alt="{{element.alt}}">
+        </li>
+    </ul>
+</div>
